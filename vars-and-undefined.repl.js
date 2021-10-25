@@ -1,0 +1,18 @@
+num = 5;
+num;
+var second_num = 10;
+second_num;
+let there_be = "light";
+there_be;
+const permanent = true;
+there_be = "funk";
+there_be;
+permanent;
+var name = 'Karl';
+name;
+var dog;
+dog;
+!!dog;
+!!undefined;
+dog = "Hank";
+dog = "Fanny";

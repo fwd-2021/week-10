@@ -10,8 +10,19 @@
 // var addTwo = function(2);
 
 function makeAdder(num) {
+  // is num a number
+  var forcedNumber = +num;
+  if (typeof(forcedNumber) !== 'number' || isNaN(forcedNumber)) {
+    console.log('num must be a number; you wrote "' + num + '"');
+    return;
+  }
   return function(x) {
-    return x + num;
+    var forcedX = +x;
+    if (typeof(forcedX) !== 'number' || isNaN(forcedX)) {
+      console.log('x must be a number; you wrote "' + x + '"');
+      return;
+    }
+    return forcedX + forcedNumber;
   }
 }
 
